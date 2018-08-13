@@ -1,34 +1,15 @@
 # Universal React + Redux Boilerplate
-
-[![NPM Version](https://img.shields.io/npm/v/universal-react-redux-boilerplate.svg)](https://npmjs.org/package/universal-react-redux-boilerplate)
-[![Build Status](https://img.shields.io/travis/CrocoDillon/universal-react-redux-boilerplate.svg?style=flat)](https://travis-ci.org/CrocoDillon/universal-react-redux-boilerplate)
-[![dependencies Status](https://david-dm.org/CrocoDillon/universal-react-redux-boilerplate/status.svg)](https://david-dm.org/CrocoDillon/universal-react-redux-boilerplate)
-[![devDependencies Status](https://david-dm.org/CrocoDillon/universal-react-redux-boilerplate/dev-status.svg)](https://david-dm.org/CrocoDillon/universal-react-redux-boilerplate?type=dev)
-[![Package Quality](http://npm.packagequality.com/shield/universal-react-redux-boilerplate.svg)](http://packagequality.com/#?package=universal-react-redux-boilerplate)
-
-Boilerplate with all the good stuff but without the JavaScript fatigue. Made by [Dillon de Voor](https://twitter.com/CrocoDillon), follow me for updates and more!
-
-Includes Koa 2, React 15, Webpack 2 and React Hot Loader 3. See section [**“Feature rich”**](#feature-rich) for what other awesome features you can expect.
-
-_This is v2 of this boilerplate. See the [v1 branch](https://github.com/CrocoDillon/universal-react-redux-boilerplate/tree/v1) for the previous version._
-
-## Why another boilerplate?
-
-Because this boilerplate is different than most boilerplates out there. Most boilerplates will just give you a rather complex starting point but not how they got to that starting point. Ever heard ot _JavaScript fatigue_? These boilerplates are not helping.
-
-This boilerplate attempts to solve this by providing a series of logical steps to build your own boilerplate. Of course you’re free to just use this one too but I encourage you to at least take a look at each step to get a basic understanding of each part of the app.
-
-The steps are in the form of commits and I really hope this makes React and all the tooling around React more comprehensible, even for beginners. If you like it, please spread the word!
+Includes Express, React 15, Webpack 2 and React Hot Loader 3. See section [**“Feature rich”**](#feature-rich) for what other awesome features you can expect.
 
 ## Feature rich
 
-Despite my aim to make this the easiest understandable boilerplate you will find lots of features useful for development and for production. The finished boilerplate will include the following:
+Boilerplate will include the following:
 
 - **Universal** or isomorphic. However you’re calling it... “Server-side rendering is not a fallback; client-side rendering is an enhancement” ([source](https://adactio.com/journal/9963)).
 - [**React**](https://facebook.github.io/react/) for obvious reasons, [**React Router**](https://github.com/reactjs/react-router) to deal with routing and [**React Helmet**](https://github.com/nfl/react-helmet) to manage changes in the document head.
 - Hot Module Replacement using [**React Hot Loader 3**](http://gaearon.github.io/react-hot-loader/).
 - [**Redux**](http://redux.js.org/) to keep application state predictable and [**Redux DevTools**](https://github.com/gaearon/redux-devtools) to help with debugging.
-- Server using [**Koa**](http://koajs.com/), the next generation web framework developed by the team behind Express.
+- Server using [**Express**](https://expressjs.com/), the next generation web framework developed by the team behind Express.
 - [**Babel**](http://babeljs.io/) so we can use the latest ECMAScript additions and even the ones that have not made it to the standard yet, use with caution.
 - Client bundle created by [**Webpack 2**](http://webpack.github.io/), which includes _tree-shaking_.
 - [**Mocha**](https://mochajs.org/) and [**Enzyme**](http://airbnb.io/enzyme/) to run your tests so your app (and you) stay healthy.
@@ -39,8 +20,8 @@ Despite my aim to make this the easiest understandable boilerplate you will find
 ## Let’s get started!
 
 ```bash
-git clone https://github.com/CrocoDillon/universal-react-redux-boilerplate.git
-cd universal-react-redux-boilerplate
+git clone https://github.com/ivo7690/react-redux-express.git
+cd react-redux-express
 npm install
 ```
 
