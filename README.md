@@ -61,6 +61,24 @@ npm run lint:js
 npm run lint:css
 ```
 
+## MONGODB ON LOCAL
+### RUN MONGOD SERVER
+open terminal
+```bash
+cd /data/db
+mongod
+```
+
+### CONNECT TO MONGODB
+OPEN NEW TERMINAL WINDOW
+```bash
+mongo
+```
+
+your mongo db url will be: 
+mongodb://127.0.0.1:27017
+
+
 ## Step by step
 
 Here is a summary of each step, where each step also represents one commit. Each step is like a milestone that brings us closer to the finished boilerplate. Feel free to modify to your needs!
