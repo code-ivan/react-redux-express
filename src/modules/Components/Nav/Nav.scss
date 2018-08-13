@@ -1,0 +1,86 @@
+.nav {
+  float: right;
+}
+
+.navList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navListItem {
+  display: inline-block;
+}
+
+.navLink {
+  display: block;
+  padding: 20px;
+  font-size: 14px;
+  color: #154859;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    background-color: #e6ebed;
+    cursor: pointer;
+  }
+}
+
+.active {
+  background-color: #e6ebed;
+}
+
+.navFunding a {
+  background-color: #50b1b8;
+  color: #FFF;
+}
+
+.navFunding a.active,
+.navFunding a:hover,.navFunding a:focus {
+  background-color: #154859;
+}
+
+.submenu {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  background-color: #154859;
+  padding: 40px;
+  width: 100%;
+  transition: all 0.5s ease;
+  p{
+    color: #FFF
+  }
+  i{
+    color: #FFF
+  }
+}
+
+.submenu.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.submenu > div > li {
+  float: left;
+  margin: 0 20px;
+}
+
+.submenu > div > li > ul {
+  padding: 10px 0 0;
+}
+.submenu li {
+  color: #FFF;
+  font-size: 15px;
+  list-style: none;
+  padding: 0 0 10px;
+}
+
+.submenu li a {
+  color: #b3dae6;
+}
+

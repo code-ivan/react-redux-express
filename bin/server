@@ -1,0 +1,38 @@
+#!/usr/bin/env node
+
+// Imports
+// -------
+const path = require('path') // must use require before babel-register is run
+
+// Globals
+// -------
+
+// Check wether npm script has set NODE_ENV global variable to production?
+const NODE_ENV = process.env.NODE_ENV || 'development'
+
+// Assign boolean value to global variables to indicate development/product and server/client modes
+global.__DEV__ = NODE_ENV !== 'production'
+global.__PROD__ = NODE_ENV === 'production'
+global.__SERVER__ = true
+global.__CLIENT__ = false
+global.CONFIG = require('../config.json')[NODE_ENV]
+
+
+// Bootstrap babel-register such that all jsx, es6 etc is transformed automatically
+require('babel-register')
+
+// Bootstrap webpack (required for webpack-isomorphic-tools)
+require('../webpack.server')
+
+const basePath = path.resolve(__dirname, __DEV__ ? '../src' : '../lib')
+const WebpackIsomorphicTools = require('webpack-isomorphic-tools') // Cannot use import yet as babel-register has not returned
+const webpackIsomorphicToolsConfig = require('../webpack.isomorphic.tools')
+
+global.webpackTools = new WebpackIsomorphicTools(webpackIsomorphicToolsConfig)
+  .server(basePath, () => {
+    const server = require(basePath)
+    server.listen(process.env.PORT || 8391, () => {
+      console.info('ENV: ', global.__PROD__ ? 'production' : 'development');
+      console.info('Server is running! http://localhost:8391/') // eslint-disable-line no-console
+    })
+  })

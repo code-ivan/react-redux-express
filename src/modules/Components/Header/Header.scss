@@ -1,0 +1,100 @@
+.Header {
+  position: fixed;
+  width: 100%;
+  background-color: #FFF;
+  z-index: 100;
+  border-bottom: 1px solid #f5f5f5;
+
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+Header {
+  opacity: 1;
+  transition: all 1s ease;
+
+  &.hideHeader {
+    opacity: 0;
+  }
+}
+
+.nav {
+  float: right;
+}
+
+.navList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navListItem {
+  display: inline-block;
+}
+
+.navLink {
+  display: block;
+  padding: 20px;
+  font-size: 14px;
+  color: #154859;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    background-color: #e6ebed;
+  }
+}
+
+.active {
+  background-color: #e6ebed;
+}
+
+.navFunding a {
+  background-color: #50b1b8;
+  color: #FFF;
+}
+
+.navFunding a.active,
+.navFunding a:hover {
+  background-color: #154859;
+}
+
+.logo,
+.phone {
+  float: left;
+}
+
+.logo {
+  padding: 17px;
+  display: block;
+
+  img {
+    width: 200px;
+  }
+}
+
+.phone {
+  padding: 20px 10px;
+  font-weight: 100;
+}
+
+.phone .icon {
+  border-left: 1px solid #ececec;
+  padding-left: 15px;
+  float: left;
+  color: #50b1b8;
+  font-size: 20px;
+  line-height: 14px;
+}
+
+.phone span {
+  margin-left: 10px;
+  display: inline-block;
+  color: #154859;
+}

@@ -1,0 +1,74 @@
+main{
+    position: relative;
+}
+.header {
+    padding:100px 0;
+    h1 {
+        font-size: 5em;
+        font-weight: 100;
+    }
+    p {
+        font-size: 1.8em;
+        font-weight: 100
+    }
+    .contentHeader {
+        margin-bottom: 30px;
+        small{
+            font-size: 14px;
+            font-weight: 100;
+            color: #cc1616;
+        }
+    }
+}
+
+.popupEmbed{
+    position: fixed;
+    z-index: 100;
+    top:20px;
+    left: 10px;
+    right: 10px;
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.65);
+    
+    button{
+        position: absolute;
+        right: 10px
+    }
+}
+.code{
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin-top: 15px;
+    position: relative;
+    font-family: monospace, monospace;
+}
+
+.content{
+    color: #000
+}
+.investor{
+    border-bottom: 1px solid #FFF;
+    padding-bottom: 30px;
+    h2{
+        font-size: 2.5em;
+    }
+}
+.company{
+    border-top: 1px dashed;
+    padding-bottom: 10px;
+    label{
+        display: inline-block;
+        margin: 1px 2px;
+    }
+}
+.imageProfile{
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+    display: inline-block;
+    object-fit: cover;
+    margin: -8px 5px 0 0
+}

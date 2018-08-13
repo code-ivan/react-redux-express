@@ -1,0 +1,62 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
+@import url('https://unpkg.com/react-select/dist/react-select.css');
+
+html{
+  background-color: #FFF;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, label, .label{
+  font-weight: 100
+}
+a, a:hover{
+  text-decoration: none;
+}
+
+img.aligncenter{
+  margin:10px auto 10px auto;
+  margin-bottom:10px!important;
+  display:block;
+}
+img.alignleft{
+  float:left;
+  margin:10px 10px 10px 0;
+  margin-bottom:10px!important;
+}
+img.alignright{
+  float:right;
+  margin:10px 0 10px 10px;
+  margin-bottom:10px!important;
+}
+
+.masterContent{
+  padding-top:30px;
+  padding-bottom:80px;
+  min-height: 300px;
+}
+
+.form-error{
+  color: #da5615 !important;  
+  font-size: 12px;
+}
+.input-group 
+.form-error{
+  position: absolute;
+  z-index: 10;
+  left: 5px;
+  bottom: -18px
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+div[class^="col-"] {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}  

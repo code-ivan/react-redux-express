@@ -1,0 +1,14 @@
+{
+    "development":{
+        "connectionString":"mongodb://127.0.0.1:27017/databasename",
+        "baseApiUrl":"http://localhost:8391"
+    },
+    "test":{
+        "connectionString":"mongodb://127.0.0.1:27017/databasename",
+        "baseApiUrl":"http://localhost:8391"
+    },
+    "production":{
+        "connectionString":"mongodb://127.0.0.1:27017/databasename",
+        "baseApiUrl":"https://website.com"
+    }
+}

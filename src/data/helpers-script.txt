@@ -1,0 +1,10 @@
+-> EXPORT
+mongoexport --host Cluster0-shard-0/luster0-shard-00-00-tzuwz.mongodb.net:27017,cluster0-shard-00-01-tzuwz.mongodb.net:27017,cluster0-shard-00-02-tzuwz.mongodb.net:27017 --ssl -u rangewell -p 'R@ngewell!' --authenticationDatabase admin  --db rangewell --collection forms --out traffic.json
+
+-> IMPORT COMPANIES
+Run comand:
+mongoimport --host Cluster0-shard-0/luster0-shard-00-00-tzuwz.mongodb.net:27017,cluster0-shard-00-01-tzuwz.mongodb.net:27017,cluster0-shard-00-02-tzuwz.mongodb.net:27017 --ssl -u rangewell -p 'R@ngewell!' --authenticationDatabase admin  --db angel --collection companies --drop --file companies.tsv --type tsv --headerline --columnsHaveTypes
+
+-> IMPORT INVESTORS
+Run comand:
+mongoimport --host Cluster0-shard-0/luster0-shard-00-00-tzuwz.mongodb.net:27017,cluster0-shard-00-01-tzuwz.mongodb.net:27017,cluster0-shard-00-02-tzuwz.mongodb.net:27017 --ssl -u rangewell -p 'R@ngewell!' --authenticationDatabase admin  --db angel --collection investors --drop --file investors.tsv --type tsv --headerline --columnsHaveTypes
